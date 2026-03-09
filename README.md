@@ -57,3 +57,17 @@
 ## 各章のアプリケーション・エージェントの動作例
 
 TODO: 動画を足す
+
+## Program Summary
+- 書籍の各章で扱う生成AIアプリ／エージェントのサンプル実装集。
+- 主にStreamlitで、チャットUI、Web/YouTube要約、画像認識・生成、PDF QA（ベクトル検索）、Webブラウジングエージェント、カスタマーサポートチャット、データ分析エージェントなどのデモを含みます。
+
+## How to Use
+- Not verified
+- `requirements.txt` の依存関係をインストール後、実行したい章のスクリプトを `streamlit run <path>` で起動します。
+  - 例: `streamlit run chapter_002/main.py`
+  - 例: `streamlit run chapter_007/main.py`（PDF QAメニュー）
+
+## Completion Status
+- partial
+  - 章ごとのデモが揃っている一方、統合されたアプリ構成やテストが見当たらず、学習用のサンプルとしての完成度に留まります。

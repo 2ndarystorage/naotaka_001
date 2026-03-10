@@ -71,3 +71,19 @@ TODO: 動画を足す
 ## Completion Status
 - partial
   - 章ごとのデモが揃っている一方、統合されたアプリ構成やテストが見当たらず、学習用のサンプルとしての完成度に留まります。
+
+## Program Summary
+- 書籍の各章に対応したStreamlitサンプル集。チャットUI、Web/YouTube要約、画像QAと画像生成、PDFアップロード＋FAISS検索のQA、Webブラウジングエージェント、カスタマーサポートエージェント、データ分析エージェント（Code Interpreter／BigQuery連携）を含みます。
+- 各アプリは章ごとに独立したスクリプトとして配置されています。
+
+## How to Use
+- Not verified
+- 依存関係をインストール: `pip install -r requirements.txt`
+- 実行したい章のアプリを起動: `streamlit run <path>`
+  - 例: `streamlit run chapter_002/main.py`
+  - 例: `streamlit run chapter_007/main.py`
+- 章によっては追加の設定が必要です（例: `.env` のAPIキー、`st.secrets["gcp_service_account"]`、LangSmith設定など）。
+
+## Completion Status
+- partial
+  - 章ごとの単体デモは揃っていますが、統合されたエントリーポイントやテスト、配布用の整備は見当たりません。

@@ -132,3 +132,18 @@ TODO: 動画を足す
 ## Completion Status
 - partial
   - 章ごとのサンプルは揃っていますが、統合されたエントリーポイントやテスト、配布向けの整備は見当たりません。
+
+## Program Summary
+- 書籍の各章に対応したStreamlitデモ集で、チャットUI、モデル選択＋概算コスト表示、Web/YouTube要約、画像QA（Vision）と画像生成（DALL·E 3）、PDFアップロード＋FAISS検索によるQA、Webブラウジングエージェント、カスタマーサポートエージェント（FAQ/店舗ツール・キャッシュ・フィードバック）、データ分析エージェント（Assistants Code Interpreter、BigQuery連携）を含みます。
+- 各アプリは章ごとに独立したスクリプトとして配置されています。
+
+## How to Use
+- Not verified
+- 依存関係のインストール: `pip install -r requirements.txt`
+- 環境変数の設定: `.env.template` を `.env` にコピーしてAPIキー等を設定
+- 実行: `streamlit run <path>`（例: `streamlit run chapter_002/main.py`、`streamlit run chapter_007/main.py`）
+- 章ごとに追加設定が必要な場合があります（例: `chapter_010/build_qa_vectorstore.py` の実行、`chapter_011/part2` の `st.secrets["gcp_service_account"]`）
+
+## Completion Status
+- partial
+  - 章別のデモは揃っていますが、統合されたアプリ構成やテスト、配布向けの整備は見当たりません。
